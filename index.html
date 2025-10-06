@@ -3,304 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - SOC Analyst | Ciberseguridad</title>
-    <meta name="description" content="Portfolio profesional de analista SOC especializado en análisis de malware, FortiGate y ciberseguridad">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <title>Portfolio SOC Analyst - [Tu nombre]</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-logo">
-                <span class="logo-text">🛡️ SOC Analyst</span>
-            </div>
-            <div class="nav-menu">
-                <a href="#inicio" class="nav-link">Inicio</a>
-                <a href="#sobre-mi" class="nav-link">Sobre Mí</a>
-                <a href="#proyectos" class="nav-link">Proyectos</a>
-                <a href="#certificaciones" class="nav-link">Certificaciones</a>
-                <a href="#contacto" class="nav-link">Contacto</a>
-            </div>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="inicio" class="hero">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1 class="hero-title">SOC Analyst</h1>
-                <h2>Especialista en Ciberseguridad </h2>
-                
-                <p class="hero-description">
-                    2+ años de experiencia en análisis de malware, administración FortiGate y respuesta a incidentes.
-                    Certificado en Fortinet NS4 y Cisco CCST.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#proyectos" class="btn btn-primary">Ver Proyectos</a>
-                    <a href="#contacto" class="btn btn-secondary">Contactar</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="cyber-animation">
-                    <i class="fas fa-shield-alt"></i>
-                    <div class="code-lines">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <header>
+        <div class="logo">🛡️ SOC Analyst</div>
+        <nav>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#writeups">Writeups</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+    <section class="intro">
+        <h1>[Tu nombre]</h1>
+        <h2>Analista SOC | Investigador de Malware | Creador Técnico</h2>
+        <p>Bienvenido/a a mi espacio profesional. Aquí comparto mis proyectos, writeups de prácticas y recursos útiles sobre ciberseguridad y análisis de malware.</p>
     </section>
-
-    <!-- About Section -->
-    <section id="sobre-mi" class="about">
-        <div class="container">
-            <h2 class="section-title">Sobre Mí</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        Analista de SOC en <strong>Secure&IT</strong> con experiencia práctica en detección de amenazas, 
-                        análisis de malware y administración de sistemas de seguridad. Especializado en herramientas como 
-                        Ghidra, FortiGate y análisis forense en entornos Linux.
-                    </p>
-                    <div class="skills-grid">
-                        <div class="skill-category">
-                            <h3>🔍 Análisis de Malware</h3>
-                            <ul>
-                                <li>Ghidra & Binary Ninja</li>
-                                <li>GoReSym & UPX</li>
-                                <li>Análisis estático/dinámico</li>
-                                <li>Reverse Engineering</li>
-                            </ul>
-                        </div>
-                        <div class="skill-category">
-                            <h3>🛡️ Administración de Red</h3>
-                            <ul>
-                                <li>FortiGate (CLI/GUI)</li>
-                                <li>IPsec & SSL VPN</li>
-                                <li>Wireshark & tcpdump</li>
-                                <li>Network Security</li>
-                            </ul>
-                        </div>
-                        <div class="skill-category">
-                            <h3>🕵️ Análisis Forense</h3>
-                            <ul>
-                                <li>Linux Forensics Tools</li>
-                                <li>PCAP Analysis</li>
-                                <li>Email Security</li>
-                                <li>OSINT Techniques</li>
-                            </ul>
-                        </div>
-                        <div class="skill-category">
-                            <h3>💻 Programación</h3>
-                            <ul>
-                                <li>PowerShell Automation</li>
-                                <li>Python Scripting</li>
-                                <li>Bash Scripting</li>
-                                <li>Log Analysis</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="proyectos" class="projects">
-        <div class="container">
-            <h2 class="section-title">Proyectos Destacados</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-bug"></i>
-                    </div>
-                    <h3>Análisis de Malware con Ghidra</h3>
-                    <p>Análisis avanzado de keyloggers y binarios de Go usando ingeniería inversa. Identificación de patrones de exfiltración FTP y ataques NTLM.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Ghidra</span>
-                        <span class="tech-tag">Binary Ninja</span>
-                        <span class="tech-tag">GoReSym</span>
-                    </div>
-                    <a href="#" class="project-link">Ver Detalles <i class="fas fa-external-link-alt"></i></a>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-firewall"></i>
-                    </div>
-                    <h3>Administración FortiGate</h3>
-                    <p>Configuración y gestión de túneles IPsec, políticas SSL VPN y troubleshooting de conectividad de red.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">FortiGate</span>
-                        <span class="tech-tag">IPsec</span>
-                        <span class="tech-tag">SSL VPN</span>
-                    </div>
-                    <a href="#" class="project-link">Ver Detalles <i class="fas fa-external-link-alt"></i></a>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-envelope-open-text"></i>
-                    </div>
-                    <h3>Investigación Seguridad Email</h3>
-                    <p>Análisis de fallos DKIM, violaciones DMARC y tentativas de spoofing. Investigación de dominios sospechosos.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">DKIM</span>
-                        <span class="tech-tag">DMARC</span>
-                        <span class="tech-tag">SPF</span>
-                    </div>
-                    <a href="#" class="project-link">Ver Detalles <i class="fas fa-external-link-alt"></i></a>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-network-wired"></i>
-                    </div>
-                    <h3>Análisis de Tráfico con Wireshark</h3>
-                    <p>Investigaciones de seguridad usando análisis de PCAP, identificación de patrones maliciosos y análisis de comunicaciones cifradas.</p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Wireshark</span>
-                        <span class="tech-tag">PCAP</span>
-                        <span class="tech-tag">Network Analysis</span>
-                    </div>
-                    <a href="#" class="project-link">Ver Detalles <i class="fas fa-external-link-alt"></i></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Challenges Section -->
-    <section class="challenges">
-        <div class="container">
-            <h2 class="section-title">Hack The Box Challenges</h2>
-            <div class="challenges-grid">
-                <div class="challenge-item">
-                    <i class="fas fa-keyboard"></i>
-                    <h4>Keylogger Analysis</h4>
-                    <p>Análisis forense de keyloggers avanzados</p>
-                </div>
-                <div class="challenge-item">
-                    <i class="fab fa-golang"></i>
-                    <h4>Golang Binary RE</h4>
-                    <p>Ingeniería inversa de binarios empaquetados con UPX</p>
-                </div>
-                <div class="challenge-item">
-                    <i class="fas fa-globe"></i>
-                    <h4>DNS Tunneling Detection</h4>
-                    <p>Identificación de exfiltración via DNS</p>
-                </div>
-                <div class="challenge-item">
-                    <i class="fas fa-chart-line"></i>
-                    <h4>Network Traffic Analysis</h4>
-                    <p>Análisis detallado de archivos PCAP</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Certifications Section -->
-    <section id="certificaciones" class="certifications">
-        <div class="container">
-            <h2 class="section-title">Certificaciones</h2>
-            <div class="cert-grid">
-                <div class="cert-card">
-                    <div class="cert-logo">
-                        <i class="fas fa-certificate"></i>
-                    </div>
-                    <h3>Fortinet NSE 4</h3>
-                    <p>Network Security Professional</p>
-                    <span class="cert-year">2025</span>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-logo">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3>Cisco CCST</h3>
-                    <p>Cybersecurity</p>
-                    <span class="cert-year">2025</span>
-                </div>
-                <div class="cert-card">
-                    <div class="cert-logo">
-                        <i class="fas fa-graduation-cap"></i>
-                    </div>
-                    <h3>Técnico Superior</h3>
-                    <p>Administración de Sistemas de Red</p>
-                    <span class="cert-year">2023</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contacto" class="contact">
-        <div class="container">
-            <h2 class="section-title">Contacto</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>¡Conectemos!</h3>
-                    <p>Interesado en colaborar o discutir oportunidades en ciberseguridad.</p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>tu-email@dominio.com</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Las Rozas de Madrid, España</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-briefcase"></i>
-                            <span>Abierto a nuevas oportunidades</span>
-                        </div>
-                    </div>
-                    <div class="social-links">
-                        <a href="#" class="social-link">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        <a href="#" class="social-link">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="#" class="social-link">
-                            <i class="fas fa-globe"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <form>
-                        <div class="form-group">
-                            <input type="text" placeholder="Nombre" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" placeholder="Email" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea placeholder="Mensaje" rows="5" required></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2025 SOC Analyst Portfolio. Desarrollado con 💙 para la comunidad de ciberseguridad.</p>
-            <p><em>"Dedicado a hacer del internet un lugar más seguro, un análisis a la vez."</em></p>
-        </div>
+    <main>
+        <section id="portfolio">
+            <h2>Portfolio</h2>
+            <ul>
+                <li><a href="portfolio/proyecto1.html">Proyecto 1: [Nombre]</a></li>
+                <li><a href="portfolio/proyecto2.html">Proyecto 2: [Nombre]</a></li>
+            </ul>
+        </section>
+        <section id="writeups">
+            <h2>Writeups</h2>
+            <ul>
+                <li><a href="writeups/keylogger-hackthebox.html">Análisis Keylogger - HackTheBox Sherlock</a></li>
+                <li><a href="writeups/reverse-go.html">Reverse engineering Go binary</a></li>
+                <li><a href="writeups/dns-tunneling.html">Análisis DNS tunneling</a></li>
+            </ul>
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Puedes contactarme en <a href="mailto:tuemail@ejemplo.com">tuemail@ejemplo.com</a>  
+            o en <a href="https://www.linkedin.com/in/tuusuario/" target="_blank">LinkedIn</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 [Tu nombre]. Todos los derechos reservados.</p>
     </footer>
-
-    <script src="script.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
