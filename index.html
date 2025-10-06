@@ -5,46 +5,136 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfect Net - Jorge Espinosa García</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Fuente técnica -->
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script defer src="main.js"></script>
 </head>
 <body>
     <header>
-        <div class="logo">🛡️ SOC Analyst</div>
+        <div class="logo">
+            <span class="logo-icon">🛡️</span> Perfect Net
+        </div>
         <nav>
+            <a href="#about">Sobre mí</a>
             <a href="#portfolio">Portfolio</a>
             <a href="#writeups">Writeups</a>
+            <a href="#skills">Skills</a>
             <a href="#contacto">Contacto</a>
         </nav>
     </header>
-    <section class="intro">
-        <h1>Jorge Espinosa García</h1>
-        <h2>Analista SOC | Investigación forense | Creador Técnico</h2>
-        <p>Bienvenido/a a mi espacio profesional. Aquí comparto mis proyectos, writeups de prácticas y recursos útiles sobre ciberseguridad y análisis forense</p>
+    <!-- Hero -->
+    <section class="hero">
+        <h1 id="main-title">Jorge Espinosa García</h1>
+        <p class="typed-text"></p>
+        <div class="hero-links">
+            <a href="#portfolio" class="hero-btn">Ver Portfolio</a>
+            <a href="#writeups" class="hero-btn">Ver Writeups</a>
+            <a href="https://www.linkedin.com/in/jespinosagarcia" target="_blank" class="hero-btn">LinkedIn</a>
+        </div>
     </section>
-    <main>
-        <section id="portfolio">
-            <h2>Portfolio</h2>
-            <ul>
-                <li><a href="portfolio/proyecto1.html">Proyecto 1: [Nombre]</a></li>
-                <li><a href="portfolio/proyecto2.html">Proyecto 2: [Nombre]</a></li>
-            </ul>
-        </section>
-        <section id="writeups">
-            <h2>Writeups</h2>
-            <ul>
-                <li><a href="writeups/keylogger-hackthebox.html">Análisis Keylogger</a></li>
-                <li><a href="writeups/reverse-go.html">Reverse engineering Go binary</a></li>
-                <li><a href="writeups/dns-tunneling.html">Análisis DNS tunneling</a></li>
-            </ul>
-        </section>
-        <section id="contacto">
-            <h2>Contacto</h2>
-            <p>Puedes contactarme en <a href="mailto:jorgeespinosagarcia7@gmail.com">jorgeespinosagarcia7@gmail.com</a>  
-            o en <a href="https://www.linkedin.com/in/jespinosagarcia" target="_blank">LinkedIn</a></p>
-        </section>
-    </main>
+    <!-- Sobre mí -->
+    <section id="about" class="about">
+        <h2>Sobre mí</h2>
+        <div class="about-grid">
+            <div class="about-photo">
+                <img src="assets/avatar-soc.png" alt="Jorge Espinosa García avatar">
+            </div>
+            <div class="about-desc">
+                <p>
+                    Soy <b>analista SOC</b> apasionado por la investigación forense, el análisis de malware y la formación continua. Disfruto creando contenido técnico y resolviendo retos en Hack The Box y entornos CTF, siempre buscando mejorar y compartir mis conocimientos.<br><br>
+                    <b>Especialidades:</b> Detección y respuesta, FortiGate, Investigación de incidentes, Python, Reversing, Threat Hunting, SIEM y seguridad en redes.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Portfolio -->
+    <section id="portfolio">
+        <h2><span class="section-icon">🗂️</span> Portfolio</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>🔍 Herramienta de Monitoreo SIEM</h3>
+                <p>Automatización de correlación y alertado en logs. Integración con ELK Stack y soporte a incidentes reales.</p>
+                <a href="portfolio/proyecto1.html" class="card-link">Ver más</a>
+            </div>
+            <div class="card">
+                <h3>🛡️ Playbook de Respuesta</h3>
+                <p>Guía visual y procedural ante incidentes de ransomware, phishing y exfiltración.</p>
+                <a href="portfolio/proyecto2.html" class="card-link">Ver más</a>
+            </div>
+        </div>
+    </section>
+    <!-- Writeups -->
+    <section id="writeups">
+        <h2><span class="section-icon">📝</span> Writeups</h2>
+        <div class="writeup-list">
+            <div class="writeup-card">
+                <h4>Análisis Keylogger - HackTheBox</h4>
+                <span class="tag tag-malware">Malware</span>
+                <span class="tag tag-reversing">Reverse</span>
+                <p>Análisis a fondo de un keylogger real (packing, bypass AV, GoLang) y cómo detectarlo en logs y SIEM.</p>
+                <a href="writeups/keylogger-hackthebox.html">Leer Writeup</a>
+            </div>
+            <div class="writeup-card">
+                <h4>Reverse engineering Go binary</h4>
+                <span class="tag tag-reversing">Reverse</span>
+                <span class="tag tag-malware">Malware</span>
+                <p>Desmontando binarios de Go y técnicas avanzadas para extraer IoCs y entender comportamiento.</p>
+                <a href="writeups/reverse-go.html">Leer Writeup</a>
+            </div>
+            <div class="writeup-card">
+                <h4>Análisis DNS tunneling</h4>
+                <span class="tag tag-network">Network</span>
+                <span class="tag tag-forensics">Forensics</span>
+                <p>Detección y estudio de túneles DNS para exfiltración de datos en entornos corporativos, filtros y reglas útiles.</p>
+                <a href="writeups/dns-tunneling.html">Leer Writeup</a>
+            </div>
+        </div>
+    </section>
+    <!-- Skills & Certificaciones -->
+    <section id="skills" class="skills">
+        <h2><span class="section-icon">🎯</span> Skills & Certificaciones</h2>
+        <ul class="skill-list">
+            <li><span>SOC Analyst</span>
+                <div class="skill-bar"><div class="skill-level" style="width: 95%"></div></div>
+            </li>
+            <li><span>Malware Analysis</span>
+                <div class="skill-bar"><div class="skill-level" style="width: 89%"></div></div>
+            </li>
+            <li><span>FortiGate</span>
+                <div class="skill-bar"><div class="skill-level" style="width: 90%"></div></div>
+            </li>
+            <li><span>Python</span>
+                <div class="skill-bar"><div class="skill-level" style="width: 81%"></div></div>
+            </li>
+            <li><span>Wireshark</span>
+                <div class="skill-bar"><div class="skill-level" style="width: 80%"></div></div>
+            </li>
+        </ul>
+        <div class="certs">
+            <b>Certificaciones:</b> 
+            <span class="cert">eJPT</span>
+            <span class="cert">Fortinet NSE4</span>
+            <span class="cert">TryHackMe</span>
+        </div>
+    </section>
+    <!-- Contacto -->
+    <section id="contacto">
+        <h2><span class="section-icon">📞</span> Contacto</h2>
+        <div class="contact-flex">
+            <div>
+                <b>Email:</b> <a href="mailto:jorgeespinosagarcia7@gmail.com">jorgeespinosagarcia7@gmail.com</a><br>
+                <b>LinkedIn:</b> <a href="https://www.linkedin.com/in/jespinosagarcia" target="_blank">/in/jespinosagarcia</a>
+            </div>
+            <form class="contact-form">
+                <input type="text" placeholder="Tu nombre" required>
+                <input type="email" placeholder="Tu email" required>
+                <textarea placeholder="Escribe tu mensaje..." required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </section>
     <footer>
-        <p>© 2025 Jorge Espinosa García. Todos los derechos reservados.</p>
+        <p>© 2025 Jorge Espinosa García | Perfect Net</p>
     </footer>
-    <script src="main.js"></script>
 </body>
 </html>
