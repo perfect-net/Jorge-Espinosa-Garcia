@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Avatar flip
+    // Flip avatar central y dentro del círculo
     const avatarImg = document.getElementById("avatar-img");
     const avatarPhoto = document.getElementById("avatar-photo");
     let flipped = false;
@@ -8,10 +8,10 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!flipped) {
             avatarImg.classList.add("flip");
             setTimeout(() => {
-                avatarImg.src = "Multimedia/avatar-real.png";
+                avatarImg.src = "Multimedia/avatar-real.png"; // Cambia por la ruta de tu foto real
                 avatarImg.classList.remove("flip");
                 flipped = true;
-            }, 1000); // igual duración animación
+            }, 1000);
         }
     });
 
