@@ -1,11 +1,47 @@
-// Animación simple para el título principal
-window.onload = function () {
-    const nameTitle = document.querySelector('.intro h1');
-    if (nameTitle) {
-        nameTitle.style.opacity = '0';
-        setTimeout(() => {
-            nameTitle.style.transition = 'opacity 1.2s';
-            nameTitle.style.opacity = '1';
-        }, 200);
+// Animación del título principal y texto mecanografiado tipo SOC
+document.addEventListener('DOMContentLoaded', () => {
+    // Fade-in para el título
+    const mainTitle = document.getElementById("main-title");
+    mainTitle.style.opacity = "0";
+    setTimeout(() => {
+        mainTitle.style.transition = "opacity 1.7s";
+        mainTitle.style.opacity = "1";
+    }, 200);
+
+    // Animación de texto estilo terminal
+    const typedText = document.querySelector('.typed-text');
+    const lines = [
+        "Analista de SOC | Blue Team 💻",
+        "Especialista en Análisis de Malware 🧬",
+        "Creador de contenido técnico 📝",
+        "Hack The Box · FortiGate · Python · Forense",
+    ];
+    let line = 0, char = 0;
+    function typeLine() {
+        if (line < lines.length) {
+            if (char < lines[line].length) {
+                typedText.textContent += lines[line][char];
+                char++;
+                setTimeout(typeLine, 36);
+            } else {
+                setTimeout(() => {
+                    typedText.textContent = "";
+                    char = 0; line++;
+                    typeLine();
+                }, 1600);
+            }
+        } else {
+            line = 0; char = 0; setTimeout(typeLine, 800);
+        }
     }
-};
+    typeLine();
+    
+    // Contact Form (ficticio: solo muestra alerta)
+    const form = document.querySelector('.contact-form');
+    form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        alert("¡Gracias por tu mensaje! Pronto me pondré en contacto contigo.");
+        form.reset();
+    });
+});
+
