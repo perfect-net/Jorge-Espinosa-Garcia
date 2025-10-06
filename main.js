@@ -1,16 +1,18 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Flip automático de avatar cada 10 segundos entre dos imágenes
     const avatarImg = document.getElementById("avatar-img");
     let showingFront = true;
-    const img1 = "Multimedia/avatar.png";       // Avatar inicial
-    const img2 = "Multimedia/avatar-real.png";  // Foto real
+    const img1 = "Multimedia/avatar.png";
+    const img2 = "Multimedia/avatar-real.png";
 
     setInterval(() => {
         avatarImg.classList.add("flip");
+        // Cambia la imagen justo en la "mitad" de la animación
         setTimeout(() => {
             avatarImg.src = showingFront ? img2 : img1;
             showingFront = !showingFront;
+        }, 580); // justo en el frame 49%-51%
+        setTimeout(() => {
             avatarImg.classList.remove("flip");
-        }, 1000); // Igual a la duración del keyframe (1s)
-    }, 10000); // 10 segundos
+        }, 1200); // cuando acaba animación
+    }, 10000);
 });
