@@ -44,4 +44,24 @@ document.addEventListener('DOMContentLoaded', () => {
         form.reset();
     });
 });
+//Flip avatar
+document.addEventListener('DOMContentLoaded', () => {
+    // ... otros códigos ...
+
+    // Flip del avatar al hacer clic
+    const avatarImg = document.getElementById("avatar-img");
+    const avatarPhoto = document.getElementById("avatar-photo");
+    let flipped = false;
+
+    avatarPhoto.addEventListener("click", () => {
+        if (!flipped) {
+            avatarImg.classList.add("flip");
+            setTimeout(() => {
+                avatarImg.src = "Multimedia/avatar-real.png"; // cambia la ruta de tu foto real
+                avatarImg.classList.remove("flip");
+                flipped = true;
+            }, 1000); // igual a la duración de la animación
+        }
+    });
+});
 
