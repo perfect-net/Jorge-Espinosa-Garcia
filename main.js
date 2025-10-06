@@ -14,5 +14,5 @@ document.addEventListener('DOMContentLoaded', () => {
         setTimeout(() => {
             avatarImg.classList.remove("flip");
         }, 1200); // cuando acaba animación
-    }, 10000);
+    }, 7000);
 });
