@@ -1,27 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Flip avatar central y dentro del círculo
+    // Flip automático de avatar cada 10 segundos entre dos imágenes
     const avatarImg = document.getElementById("avatar-img");
-    const avatarPhoto = document.getElementById("avatar-photo");
-    let flipped = false;
+    let showingFront = true;
+    const img1 = "Multimedia/avatar.png";       // Avatar inicial
+    const img2 = "Multimedia/avatar-real.png";  // Foto real
 
-    avatarPhoto.addEventListener("click", () => {
-        if (!flipped) {
-            avatarImg.classList.add("flip");
-            setTimeout(() => {
-                avatarImg.src = "Multimedia/avatar-real.png"; // Cambia por la ruta de tu foto real
-                avatarImg.classList.remove("flip");
-                flipped = true;
-            }, 1000);
-        }
-    });
-
-    // Contact form ficticio
-    const form = document.querySelector('.contact-form');
-    if (form) {
-        form.addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert("¡Gracias por tu mensaje! Pronto te responderé.");
-            form.reset();
-        });
-    }
+    setInterval(() => {
+        avatarImg.classList.add("flip");
+        setTimeout(() => {
+            avatarImg.src = showingFront ? img2 : img1;
+            showingFront = !showingFront;
+            avatarImg.classList.remove("flip");
+        }, 1000); // Igual a la duración del keyframe (1s)
+    }, 10000); // 10 segundos
 });
