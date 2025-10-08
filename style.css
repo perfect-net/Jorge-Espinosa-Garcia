@@ -347,6 +347,38 @@ section h2::after {
     box-shadow: 0 12px 32px rgba(119, 95, 231, 0.5);
 }
 
+/* ==== BOTONES CAJITA ESTÁNDAR ==== */
+.link-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #2a1d4a, #4a2a7a);
+    color: #eadbff;
+    font-weight: 600;
+    font-size: 1.05em;
+    padding: 11px 28px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: 2px solid #7a3bd1;
+    box-shadow: 0 4px 12px rgba(58, 40, 102, 0.4);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    margin-right: 12px;
+}
+
+.link-btn:hover {
+    background: linear-gradient(135deg, #7a3bd1, #b07cff);
+    color: #fff;
+    border-color: #bfa1ff;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(122, 59, 209, 0.5);
+}
+
+.link-btn.disabled {
+    background: rgba(42, 29, 74, 0.5);
+    color: #777;
+    border-color: #555;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
 /* ==== BOTÓN CV PREMIUM ==== */
 .cv-btn {
     display: inline-block;
@@ -423,3 +455,47 @@ section h2::after {
 .nav-btn:focus, .hero-btn:focus, .writeup-btn:focus, .cv-btn:focus {
     animation: glow 2s infinite;
 }
+
+/* ==== CONTACTO CENTRADO SIN FORMULARIO ==== */
+.contact-info-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-item {
+    text-align: center;
+}
+
+.contact-item p {
+    margin-bottom: 12px;
+    font-size: 1.1em;
+    color: #eadbff;
+}
+
+.contact-link-btn {
+    display: inline-block;
+    background: linear-gradient(135deg, #1e3a5f, #2980b9);
+    color: #87ceeb;
+    font-weight: 600;
+    font-size: 1.08em;
+    padding: 14px 32px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: 2px solid #3498db;
+    box-shadow: 0 4px 16px rgba(52, 152, 219, 0.3);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    min-width: 280px;
+}
+
+.contact-link-btn:hover {
+    background: linear-gradient(135deg, #3498db, #87ceeb);
+    color: #1e3a5f;
+    border-color: #87ceeb;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 28px rgba(135, 206, 235, 0.5);
+}
+
