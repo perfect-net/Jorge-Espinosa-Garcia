@@ -271,3 +271,39 @@ a:hover, .card-link:hover, .writeup-card a:hover {
     text-decoration-color: #42E7FA;
     background: #211d3a88;
 }
+
+.cv-content {
+    background: #23284B;
+    color: #E9EAF5;
+    border-radius: 13px;
+    box-shadow: 0 2px 16px #C855D744;
+    padding: 32px 25px 28px 25px;
+    max-width: 780px;
+    margin: 30px auto 0 auto;
+}
+.cv-content h2 {
+    color: #42E7FA;
+    margin-top: 18px;
+    margin-bottom: 8px;
+    font-size: 1.25em;
+    border-bottom: 1.2px solid #C855D7aa;
+    padding-bottom: 5px;
+}
+.cv-content ul {
+    margin-top: 0;
+    margin-bottom: 15px;
+    margin-left: 0;
+    padding-left: 21px;
+}
+.cv-content li {
+    margin-bottom: 7px;
+}
+.cv-content a {
+    color: #C855D7;
+    text-decoration: underline 1.8px #42E7FA;
+    transition: color 0.19s, text-decoration-color 0.15s;
+}
+.cv-content a:hover {
+    color: #42E7FA;
+    text-decoration-color: #C855D7;
+}
