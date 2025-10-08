@@ -307,3 +307,23 @@ a:hover, .card-link:hover, .writeup-card a:hover {
     color: #42E7FA;
     text-decoration-color: #C855D7;
 }
+.cv-btn {
+    display: inline-block;
+    background: linear-gradient(120deg, #42E7FA 40%, #C855D7 120%);
+    color: #23284B;
+    font-weight: bold;
+    font-size: 1.17em;
+    padding: 15px 38px;
+    border-radius: 13px;
+    border: none;
+    text-decoration: none;
+    box-shadow: 0 2px 18px #C855D744;
+    transition: background 0.14s, color 0.21s, box-shadow 0.19s;
+    outline: none;
+    cursor: pointer;
+}
+.cv-btn:hover {
+    background: linear-gradient(110deg, #C855D7 20%, #42E7FA 100%);
+    color: #fff;
+    box-shadow: 0 2px 28px #42E7FA88;
+}
