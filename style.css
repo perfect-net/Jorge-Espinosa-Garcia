@@ -243,6 +243,21 @@ section h2::after {
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     overflow: hidden;
+    display: flex;
+    align-items: center;       /* Alinea verticalmente */
+    justify-content: flex-start;/* Alinea horizontalmente al inicio */
+    gap: 12px;                  /* Espacio uniforme */
+    margin-top: 20px;
+
+/* Asegura misma anchura y padding para todos */
+.card-actions .link-btn,
+.card-actions .writeup-btn,
+.writeup-actions .link-btn,
+.writeup-actions .writeup-btn {
+  min-width: 160px;
+  text-align: center;
+}
+        
 }
 .card::before, .writeup-card::before {
     content: "";
@@ -446,6 +461,20 @@ section h2::after {
     }
 }
 
+/* 2. Foto a la izquierda, texto a la derecha en “Sobre mí” */
+.about-grid {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+.about-photo {
+  order: 1;
+}
+.about-desc {
+  order: 2;
+  flex: 1;
+}
+
 /* ==== ANIMACIONES ADICIONALES ==== */
 @keyframes glow {
     0%, 100% { box-shadow: 0 0 20px rgba(119, 95, 231, 0.3); }
@@ -498,4 +527,20 @@ section h2::after {
     transform: translateY(-2px);
     box-shadow: 0 8px 28px rgba(135, 206, 235, 0.5);
 }
+
+@media (max-width: 768px) {
+  .about-grid {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .about-desc {
+    order: 2;
+    width: 100%;
+  }
+  .about-photo {
+    order: 1;
+  }
+}
+
 
