@@ -1,9 +1,19 @@
 body {
-    background: #16151F;
-    color: #E9EAF5;
+    background: url('Multimedia/avatar.png') no-repeat center center fixed;
+    background-size: cover;
+    /* Puedes seguir usando tus colores base para overlays */
+    color: #E9EAF5; /* O el color de texto que prefieras */
     font-family: 'Fira Mono', 'Consolas', monospace;
     margin: 0;
 }
+body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(20,18,40, 0.7); /* Cambia opacidad a tu gusto */
+    z-index: -1;
+}
+
 header {
     background: #221C29;
     border-bottom: 2px solid #9E32A8;
