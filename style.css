@@ -1,3 +1,8 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
 body {
     background: url('Multimedia/avatar.png') no-repeat center center fixed;
     background-size: cover;
@@ -553,18 +558,23 @@ section h2::after {
   .hero-links {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 8px;
+    width: 100%:
     align-items: center;
   }
+    .hero-links a {
+  width: 100%;
+  max-width: none;
+}
 
   /* 3. Secciones y tarjetas ocupan casi todo el ancho */
-  .hero, section, .card, .writeup-card {
+ .hero, section, .card, .writeup-card {
   width: 100%;
   margin: 0;
-  padding: 20px 10px;
+  padding: 20px;
   border-radius: 0;
 }
-  html, body { overflow-x: hidden; }
+  
     
   /* 4. Títulos más pequeños */
       body { font-size: 0.9em; }
@@ -578,6 +588,9 @@ section h2::after {
     gap: 20px;
   }
 
+    body {
+  padding: 0 5px;
+}
   /* 6. Botones con ancho completo */
   .link-btn, .writeup-btn, .cv-btn {
   width: 100%;
@@ -590,6 +603,13 @@ section h2::after {
     max-width: 300px;
     margin: 8px 0;
   }
+img, iframe {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
 }
 
 
