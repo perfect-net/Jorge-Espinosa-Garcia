@@ -195,17 +195,39 @@ section {
     position: relative;
 }
 
+/* ==== TÍTULOS DE SECCIÓN MEJORADOS ==== */
 section h2 {
-    color: #8c6fff;
-    border-bottom: 3px solid transparent;
-    background: linear-gradient(90deg, #8c6fff, #c7abfe) padding-box,
-                linear-gradient(90deg, #8c6fff, #c7abfe) border-box;
-    background-clip: padding-box, border-box;
-    padding-bottom: 12px;
+    color: #c7abfe;
     font-size: 1.4em;
     font-weight: 800;
     margin-bottom: 28px;
-    text-shadow: 0 2px 10px rgba(140, 111, 255, 0.3);
+    text-shadow: 0 2px 10px rgba(199, 171, 254, 0.4);
+    position: relative;
+    padding-left: 35px;
+}
+
+/* Icono decorativo a la izquierda */
+section h2::before {
+    content: "▶";
+    position: absolute;
+    left: 0;
+    color: #b07cff;
+    font-size: 0.8em;
+    top: 50%;
+    transform: translateY(-50%);
+    text-shadow: 0 0 8px #b07cff;
+}
+
+/* Línea sutil debajo sin tapar texto */
+section h2::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(90deg, #7a3bd1, transparent);
+    border-radius: 1px;
 }
 
 /* ==== CARDS ULTRA-PREMIUM ==== */
