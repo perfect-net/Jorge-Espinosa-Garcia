@@ -250,12 +250,22 @@ section h2::after {
     margin-top: 20px;
 
 /* Asegura misma anchura y padding para todos */
-.card-actions .link-btn,
-.card-actions .writeup-btn,
-.writeup-actions .link-btn,
-.writeup-actions .writeup-btn {
-  min-width: 160px;
-  text-align: center;
+
+
+.card-actions,
+.writeup-actions {
+  display: flex;
+  flex-direction: column;    /* Cascada vertical */
+  align-items: flex-start;   /* Alinear a la izquierda */
+  gap: 10px;                 /* Espacio entre elementos */
+  margin-top: 20px;
+}
+
+.link-btn,
+.writeup-btn,
+.cv-btn {
+  width: auto;             /* Ajuste al contenido */
+  padding: 10px 24px;      /* Igual padding para uniformidad */
 }
         
 }
