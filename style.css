@@ -554,18 +554,22 @@ section h2::after {
     overflow-x: hidden;
   }
 
+  html, body {
+  overflow-x: hidden !important;
+}
+
   /* 2. Hero: botones en columna */
   .hero-links {
     display: flex;
     flex-direction: column;
     gap: 8px;
-    width: 100%:
+    width: 100%;
     align-items: center;
   }
     .hero-links a {
-  width: 100%;
-  max-width: none;
-}
+    width: 100%;
+    max-width: none;
+  }
 
   /* 3. Secciones y tarjetas ocupan casi todo el ancho */
  .hero, section, .card, .writeup-card {
