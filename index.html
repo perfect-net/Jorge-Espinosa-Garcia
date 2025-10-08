@@ -7,16 +7,16 @@
     <link rel="stylesheet" href="style.css">
     <!-- Fuente técnica -->
     <link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="Multimedia/f-icon.png" type="image/png">
+    <link rel="icon" href="Multimedia/favicon.png" type="image/png">
     <script defer src="main.js"></script>
 </head>
 <body>
     <header>
         <div class="brand-bar-left">
-            <span class="logo">🛡️Perfect-Net</span>
+            <span class="logo">Perfect-Net</span>
         </div>
-        
     </header>
+
     <!-- Hero -->
     <section class="hero">
         <h1 id="main-title">Jorge Espinosa García</h1>
@@ -27,6 +27,7 @@
             <a href="https://www.linkedin.com/in/jespinosagarcia" target="_blank" class="hero-btn">LinkedIn</a>
         </div>
     </section>
+
     <!-- Sobre mí -->
     <section id="about" class="about">
         <h2>Sobre mí</h2>
@@ -35,79 +36,92 @@
                 <div class="avatar-wrapper">
                     <img src="Multimedia/avatar.png" alt="Avatar inicial" id="avatar-img">
                 </div>
-                <p class="avatar_text"></p>
+                <p class="avatar_text">Yo 😎</p>
             </div>
-
             <div class="about-desc">
                 <p>
-                    Soy <b>analista SOC</b> apasionado por la investigación forense, el análisis de malware y la formación continua. Disfruto creando contenido técnico y resolviendo retos y laboratorios prácticos, siempre buscando mejorar y compartir mis conocimientos.<br><br>
-                    
+                    Soy <b>analista SOC</b> apasionado por la investigación forense, el análisis de malware y la formación continua.
+                    Disfruto creando contenido técnico y resolviendo retos en Hack The Box y entornos CTF, siempre buscando mejorar y compartir mis conocimientos.
+                    <br><br>
+                    <b>Especialidades:</b> Detección y respuesta, FortiGate, Investigación de incidentes, Python, Reversing, Threat Hunting, SIEM y seguridad en redes.
                 </p>
             </div>
         </div>
     </section>
+
     <!-- Portfolio -->
     <section id="portfolio">
-        <h2><span class="section-icon">🗂️</span> Portfolio</h2>
+        <h2><span class="section-icon">📁</span> Portfolio</h2>
         <div class="cards">
-            
             <div class="card">
-                <h3> Portfolio  - CV </h3>
+                <h3>Portfolio - CV</h3>
                 <p>En el siguiente enlace puedes ver mi portfolio profesional donde adjunto mi trayectoria en mi carrera laboral.</p>
-                <a href="portfolio/index_portfolio" class="card-link" target="_blank">Ver más</a>
-                 <a href="portfolio/Jorge_Espinosa_Garcia_CV.pdf" download class="writeup-btn" 📄 Descargar CV PDF> Descargar CV en formato PDF</a>            
+                <div class="card-actions">
+                    <a href="portfolio/index_portfolio.html" class="card-link-btn">Ver más</a>
+                    <a href="portfolio/Jorge_Espinosa_Garcia_CV.pdf" download class="writeup-btn">Descargar CV en formato PDF</a>
+                </div>
             </div>
             <div class="card">
-                <h3>Proyectos personales </h3>
+                <h3>Proyectos personales</h3>
                 <p>Próximamente</p>
-                <a href="Proyectos_personales/index_proyectos_personales" class="card-link" target="_blank">Próximamente</a>
+                <div class="card-actions">
+                    <a href="#" class="card-link-btn disabled">Próximamente</a>
+                </div>
             </div>
         </div>
     </section>
+
     <!-- Writeups -->
     <section id="writeups">
         <h2><span class="section-icon">📝</span> Writeups</h2>
         <div class="writeup-list">
             <div class="writeup-card">
                 <h4>Análisis de Malware Cobal Strike -- HackTheBox Challenge StrikeBack -- Reversing C&C/C2 encryption</h4>
-                <span class="tag tag-malware">Malware</span>
-                <span class="tag tag-reversing">Reverse</span>
-                <p></p>
-                <a href="https://github.com/perfect-net/Jorge-Espinosa-Garcia/blob/main/WRITEUP_PDF/Strike%20Back%20-%20CobalStrike%20C2%20reversing.pdf" target="_blank">Leer Writeup</a>
-                <a href="https://www.linkedin.com/posts/jespinosagarcia_cybersecurity-infosec-it-activity-7381674748583231488-Q0n4?utm_source=share&utm_medium=member_desktop&rcm=ACoAADxiJagBQo5Q3_VceGZr8ZDvdGrO0vxLzPA" target="_blank">Comenta si te ha gustado.</a>
-                <a href="https://github.com/perfect-net/Jorge-Espinosa-Garcia/raw/main/WRITEUP_PDF/Strike%20Back%20-%20CobalStrike%20C2%20reversing.pdf" 
-                   download 
-                   class="writeup-btn">
-                   📄 Descargar PDF
-                </a>  
+                <div class="writeup-tags">
+                    <span class="tag tag-malware">Malware</span>
+                    <span class="tag tag-reversing">Reverse</span>
+                </div>
+                <p>Análisis a fondo de un keylogger real y cómo detectarlo en logs y SIEM.</p>
+                <div class="writeup-actions">
+                    <a href="writeups/cobal-strike-writeup.html" class="writeup-link-btn">Leer Writeup</a>
+                    <a href="https://github.com/perfect-net/Jorge-Espinosa-Garcia/raw/main/WRITEUP_PDF/Strike%20Back%20-%20CobalStrike%20C2%20reversing.pdf" download class="writeup-btn">📄 Descargar PDF</a>
+                </div>
+                <p class="writeup-note">Post-LinkedIn. Comenta si te ha gustado.</p>
             </div>
+
             <div class="writeup-card">
-                <h4>🗿ANÁLISIS 𝐅𝐎𝐑𝐄𝐍𝐒𝐄: NBNS 𝐏𝐎𝐈𝐒𝐎𝐍 ☣️ + NTLM 𝐑𝐄𝐋𝐀𝐘 🛸 </h4>
-                <span class="tag tag-reversing"></span>
-                <span class="tag tag-malware"></span>
-                <p>Solo disponible post de Linkedin</p>
-                <a href="https://www.linkedin.com/posts/jespinosagarcia_activedirectory-ntlmrelay-blueteam-activity-7381040557424291840-Rph4?utm_source=share&utm_medium=member_desktop&rcm=ACoAADxiJagBQo5Q3_VceGZr8ZDvdGrO0vxLzPA" target="_blank">Leer Post</a>
+                <h4>🧬ANÁLISIS FORENSE: NBNS POISON 😨 + NTLM RELAY ⚡</h4>
+                <div class="writeup-tags">
+                    <span class="tag tag-network">Network</span>
+                    <span class="tag tag-forensics">Forensics</span>
+                </div>
+                <p>Solo disponible post de LinkedIn</p>
+                <div class="writeup-actions">
+                    <a href="https://www.linkedin.com/posts/jespinosagarcia_análisis-forense-nbns-poison-ntlm-activity-7242459671018491907-9KHJ" target="_blank" class="writeup-link-btn">Leer Post</a>
+                </div>
             </div>
+
             <div class="writeup-card">
                 <h4>Análisis DNS tunneling</h4>
-                <span class="tag tag-network">Network</span>
-                <span class="tag tag-forensics">Forensics</span>
-                <p>Detección y estudio de túneles DNS para exfiltración de datos en entornos corporativos, filtros y reglas útiles.</p>
-                <a href="writeups/dns-tunneling.html" target="_blank">Leer Writeup</a>
+                <div class="writeup-tags">
+                    <span class="tag tag-network">Network</span>
+                    <span class="tag tag-forensics">Forensics</span>
+                </div>
+                <p>Próximamente</p>
+                <div class="writeup-actions">
+                    <a href="#" class="writeup-link-btn disabled">Próximamente</a>
+                </div>
             </div>
         </div>
     </section>
-    
+
     <!-- Contacto -->
     <section id="contacto">
         <h2><span class="section-icon">📞</span> Contacto</h2>
         <div class="contact-flex">
-            <div>
-                <b>Email</b> <a href="mailto:jorgeespinosagarcia7@gmail.com">jorgeespinosagarcia7@gmail.com</a><br>
-                <p></p>
-                <b>LinkedIn</b> <a href="https://www.linkedin.com/in/jespinosagarcia" target="_blank">/in/jespinosagarcia</a>
-                <p><b>Github</b> <a href="https://github.com/perfect-net/" target="_blank">Github - Perfect-Net</a></p>
-                <p><b>Discord</b> <a href="https://discord.gg/YJM5a7t8" target="_blank">Comunidad de Discord Perfect-Net</a></p>
+            <div class="contact-info">
+                <p><b>Email:</b> <a href="mailto:jorgeespinosagarcia7@gmail.com">jorgeespinosagarcia7@gmail.com</a></p>
+                <p><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/jespinosagarcia" target="_blank">/in/jespinosagarcia</a></p>
             </div>
             <form class="contact-form">
                 <input type="text" placeholder="Tu nombre" required>
@@ -117,6 +131,7 @@
             </form>
         </div>
     </section>
+
     <footer>
         <p>© 2025 Jorge Espinosa García | Perfect Net</p>
     </footer>
