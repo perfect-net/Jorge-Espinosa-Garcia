@@ -337,3 +337,28 @@ a:hover, .card-link:hover, .writeup-card a:hover {
     color: #fff;
     box-shadow: 0 2px 28px #42E7FA88;
 }
+
+/* Botón especial para descarga de writeups */
+.writeup-btn {
+    display: inline-block;
+    background: linear-gradient(90deg, #312252 60%, #37398a 100%);
+    color: #e5dbff;
+    font-weight: 600;
+    font-size: 1.08em;
+    padding: 11px 30px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: 2px solid #775fe7;
+    box-shadow: 0 2px 8px #22096644;
+    margin-left: 12px;
+    margin-right: 10px;
+    margin-top: 5px;
+    transition: background 0.15s, color 0.19s, border 0.14s, box-shadow 0.20s;
+}
+.writeup-btn:hover {
+    background: linear-gradient(95deg, #775fe7 20%, #32296f 100%);
+    color: #fff;
+    border: 2px solid #48aaff;
+    box-shadow: 0 2px 14px #775fe799;
+}
+
