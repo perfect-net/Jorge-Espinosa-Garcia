@@ -541,42 +541,56 @@ section h2::after {
     box-shadow: 0 8px 28px rgba(135, 206, 235, 0.5);
 }
 
+/* ==== DISEÑO MÓVIL ==== */
 @media (max-width: 768px) {
-  /* 1. Layout en columna para todo */
-  body { font-size: 0.95em; }
-  .hero, section, .card, .writeup-card {
-    width: 90%;
-    margin: 20px auto;
-    padding: 20px;
+  /* 1. Contenedor global ajustado */
+  body {
+    font-size: 0.95em;
+    overflow-x: hidden;
   }
-  /* 2. Cascada vertical de botones en hero */
+
+  /* 2. Hero: botones en columna */
   .hero-links {
     display: flex;
     flex-direction: column;
     gap: 12px;
     align-items: center;
   }
-  /* 3. Foto y texto apilados */
+
+  /* 3. Secciones y tarjetas ocupan casi todo el ancho */
+  .hero, section, .card, .writeup-card {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+  }
+
+  /* 4. Títulos más pequeños */
+  #main-title { font-size: 2.2em; margin-bottom: 30px; }
+  section h2 { font-size: 1.2em; padding-left: 25px; }
+
+  /* 5. Foto y texto apilados */
   .about-grid {
     flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 20px;
   }
-  /* 4. Títulos reducidos */
-  #main-title { font-size: 2.2em; margin-bottom: 30px; }
-  section h2 { font-size: 1.2em; padding-left: 25px; }
-  /* 5. Botones full-width */
+
+  /* 6. Botones con ancho completo */
   .link-btn, .writeup-btn, .cv-btn {
     width: 100%;
     max-width: 300px;
     margin: 8px 0;
   }
-  /* 6. Ocultar scrollbar lateral */
-  html, body { overflow-x: hidden; }
+
+  /* 7. Contacto: enlaces en columna, ancho adaptado */
+  .contact-info-center .contact-link-btn {
+    width: 100%;
+    max-width: 300px;
+    margin: 8px 0;
+  }
 }
 
-    
 
 
 
