@@ -23,28 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
         setInterval(flipAvatar, 5000);
     }
 
-    // ==== FORMULARIO DE CONTACTO ====
-    const form = document.querySelector('.contact-form');
-    if (form) {
-        form.addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Animación del botón
-            const button = form.querySelector('button');
-            const originalText = button.textContent;
-            button.textContent = 'Enviando...';
-            button.style.background = 'linear-gradient(135deg, #37398a, #775fe7)';
-            
-            // Simular envío
-            setTimeout(() => {
-                alert("¡Gracias por tu mensaje! Pronto te responderé.");
-                form.reset();
-                button.textContent = originalText;
-                button.style.background = '';
-            }, 1500);
-        });
-    }
-
     // ==== SMOOTH SCROLLING PARA NAVEGACIÓN ====
     const navLinks = document.querySelectorAll('.nav-btn[href^="#"]');
     navLinks.forEach(link => {
