@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
         };
 
         // Iniciar el intervalo cada 7 segundos
-        setInterval(flipAvatar, 7000);
+        setInterval(flipAvatar, 5000);
     }
 
     // ==== FORMULARIO DE CONTACTO ====
