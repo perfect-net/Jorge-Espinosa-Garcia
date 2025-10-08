@@ -559,15 +559,17 @@ section h2::after {
 
   /* 3. Secciones y tarjetas ocupan casi todo el ancho */
   .hero, section, .card, .writeup-card {
-    width: 90%;
-    margin: 20px auto;
-    padding: 20px;
-  }
-
+  width: 100%;
+  margin: 0;
+  padding: 20px 10px;
+  border-radius: 0;
+}
+  html, body { overflow-x: hidden; }
+    
   /* 4. Títulos más pequeños */
-  #main-title { font-size: 2.2em; margin-bottom: 30px; }
-  section h2 { font-size: 1.2em; padding-left: 25px; }
-
+      body { font-size: 0.9em; }
+    #main-title { font-size: 2em; }
+    section h2 { font-size: 1.2em; }
   /* 5. Foto y texto apilados */
   .about-grid {
     flex-direction: column;
@@ -578,11 +580,10 @@ section h2::after {
 
   /* 6. Botones con ancho completo */
   .link-btn, .writeup-btn, .cv-btn {
-    width: 100%;
-    max-width: 300px;
-    margin: 8px 0;
-  }
-
+  width: 100%;
+  max-width: none;
+  margin: 8px 0;
+}
   /* 7. Contacto: enlaces en columna, ancho adaptado */
   .contact-info-center .contact-link-btn {
     width: 100%;
