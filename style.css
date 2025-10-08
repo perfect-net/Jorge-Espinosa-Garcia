@@ -542,18 +542,41 @@ section h2::after {
 }
 
 @media (max-width: 768px) {
+  /* 1. Layout en columna para todo */
+  body { font-size: 0.95em; }
+  .hero, section, .card, .writeup-card {
+    width: 90%;
+    margin: 20px auto;
+    padding: 20px;
+  }
+  /* 2. Cascada vertical de botones en hero */
+  .hero-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+  }
+  /* 3. Foto y texto apilados */
   .about-grid {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    gap: 20px;
   }
-  .about-desc {
-    order: 2;
+  /* 4. Títulos reducidos */
+  #main-title { font-size: 2.2em; margin-bottom: 30px; }
+  section h2 { font-size: 1.2em; padding-left: 25px; }
+  /* 5. Botones full-width */
+  .link-btn, .writeup-btn, .cv-btn {
     width: 100%;
+    max-width: 300px;
+    margin: 8px 0;
   }
-  .about-photo {
-    order: 1;
-  }
+  /* 6. Ocultar scrollbar lateral */
+  html, body { overflow-x: hidden; }
 }
+
+    
+
 
 
