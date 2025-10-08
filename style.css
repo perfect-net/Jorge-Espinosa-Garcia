@@ -253,21 +253,23 @@ section h2::after {
 }
 
 /* ==== ACCIONES (botones) alineados bajo el texto ==== */
-.card-actions, .writeup-actions {
+/* ==== ACCIONES (botones) con wrap para móviles y escritorio ==== */
+.card-actions,
+.writeup-actions {
   display: flex;
-  flex-direction: row;       /* Botones en fila */
-  align-items: center;
-  gap: 12px;                 /* Espacio entre botones */
-  margin-top: 8px;           /* Separación tras el texto */
+  flex-wrap: wrap;       /* Permite que los botones pasen a la siguiente línea */
+  gap: 12px;             /* Espacio uniforme entre botones */
+  margin-top: 8px;       /* Separación tras el texto */
 }
 
-/* ==== BOTONES UNIFORMES ==== */
-.link-btn, .writeup-btn, .cv-btn {
-  min-width: 140px;           /* Mismo ancho mínimo */
-  text-align: center;         /* Centrado del texto */
-  padding: 10px 24px;         /* Padding igual */
-  display: inline-block;      /* Para respetar ancho */
-  border-radius: 12px;        /* Bordes redondos */
+/* Botones flexibles que se ajustan al espacio disponible */
+.link-btn,
+.writeup-btn,
+.cv-btn {
+  flex: 1 1 auto;        /* Crecen y encogen según el contenedor */
+  min-width: 140px;      /* Ancho mínimo para mantener legibilidad */
+  text-align: center;
+  padding: 10px 24px;
 }
 
 /* Hover conserva tu estilo actual */
