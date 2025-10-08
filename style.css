@@ -230,50 +230,47 @@ section h2::after {
     border-radius: 1px;
 }
 
-/* ==== CARDS ULTRA-PREMIUM ==== */
+/* ==== TARJETAS: layout en columna ==== */
 .card, .writeup-card {
-    background: rgba(33, 25, 57, 0.9);
-    border: 2px solid rgba(119, 95, 231, 0.3);
-    border-radius: 18px;
-    box-shadow: 0 12px 28px rgba(28, 22, 56, 0.4),
-                inset 0 1px 0 rgba(255, 255, 255, 0.05);
-    padding: 24px 24px;
-    margin-bottom: 24px;
-    backdrop-filter: blur(8px);
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-    position: relative;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 16px;
-    align-self: flex-start; /* Alinea el grupo de botones al inicio */
-    width: 100%;
-    display: flex;
-    flex-direction: row;    /* Botones en fila */
-    gap: 12px;
-    margin-top: 8px;        /* Espacio ajustado */
-
-/* Asegura misma anchura y padding para todos */
-
-
-.card-actions,
-.writeup-actions {
   display: flex;
-  flex-direction: column;    /* Cascada vertical */
-  align-items: flex-start;   /* Alinear a la izquierda */
-  gap: 10px;                 /* Espacio entre elementos */
-  margin-top: 20px;
+  flex-direction: column;     /* Título → texto → botones */
+  align-items: flex-start;
+  gap: 16px;
+  padding: 24px;
+  margin-bottom: 24px;
+  background: rgba(33, 25, 57, 0.9);
+  border: 2px solid rgba(119, 95, 231, 0.3);
+  border-radius: 18px;
+  box-shadow: 0 12px 28px rgba(28, 22, 56, 0.4),
+              inset 0 1px 0 rgba(255,255,255,0.05);
+  position: relative;
+  overflow: hidden;
 }
 
-.link-btn,
-.writeup-btn,
-.cv-btn {
-    min-width: 140px;             /* Ajuste al contenido */
-    text-align: center; 
-    padding: 10px 24px;      /* Igual padding para uniformidad */
+/* ==== ACCIONES (botones) alineados bajo el texto ==== */
+.card-actions, .writeup-actions {
+  display: flex;
+  flex-direction: row;       /* Botones en fila */
+  align-items: center;
+  gap: 12px;                 /* Espacio entre botones */
+  margin-top: 8px;           /* Separación tras el texto */
 }
-        
+
+/* ==== BOTONES UNIFORMES ==== */
+.link-btn, .writeup-btn, .cv-btn {
+  min-width: 140px;           /* Mismo ancho mínimo */
+  text-align: center;         /* Centrado del texto */
+  padding: 10px 24px;         /* Padding igual */
+  display: inline-block;      /* Para respetar ancho */
+  border-radius: 12px;        /* Bordes redondos */
+}
+
+/* Hover conserva tu estilo actual */
+.link-btn:hover { /* ... */ }
+.writeup-btn:hover { /* ... */ }
+.cv-btn:hover { /* ... */ }
+
+
 }
 .card::before, .writeup-card::before {
     content: "";
