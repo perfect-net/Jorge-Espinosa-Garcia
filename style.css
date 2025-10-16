@@ -351,6 +351,13 @@ section h2::after {
   60%  { filter: blur(4px); }
   100% { transform: rotateY(360deg) scale(1); filter: blur(0); }
 }
+/* Justificar texto de la sección Sobre mí */
+.about-desc p {
+    text-align: justify;
+    line-height: 1.6; /* Mejora la legibilidad */
+}
+
+
 /* ==== BOTÓN WRITEUP MEJORADO ==== */
 .writeup-btn {
     display: inline-block;
@@ -471,6 +478,7 @@ section h2::after {
 @media (max-width: 900px) {
     .about-grid, .cards, .writeup-list, .contact-flex { 
         flex-direction: column; 
+      
     }
     header { 
         padding: 16px 8px;
@@ -484,6 +492,10 @@ section h2::after {
     }
     #main-title {
         font-size: 2.4em;
+    }
+  .about-desc p {
+        text-align: justify;
+        text-align-last: left; /* La última línea alineada a la izquierda */
     }
 }
 
