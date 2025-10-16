@@ -54,8 +54,8 @@ document.addEventListener('DOMContentLoaded', () => {
     if (typedTextElement) {
         const phrases = [
             'SOC Analyst & Cybersecurity Specialist',
-            'Malware Analysis Expert',
-            'Threat Hunter & Incident Response',
+            'Malware Analysis',
+            'Incident Response',
             'Cybersecurity Content Creator'
         ];
         let currentPhrase = 0;
