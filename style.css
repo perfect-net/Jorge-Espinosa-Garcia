@@ -607,110 +607,94 @@ section h2::after {
 }
 
 /* Contenedor principal de Contacto */
-#contact {
-  background: rgba(36, 28, 65, 0.8);
+/* Contenedor general */
+.contact-section {
   padding: 40px 20px;
-  border-radius: 16px;
-  backdrop-filter: blur(10px);
-  box-shadow: 0 8px 24px rgba(28, 22, 56, 0.6);
-  margin: 40px auto;
-  max-width: 600px;
+  display: flex;
+  justify-content: center;
 }
 
-/* Título de la sección */
-#contact h2 {
-  font-size: 1.8em;
-  color: #c7abfe;
+/* Tarjeta de contacto */
+.contact-card {
+  background: rgba(36,28,65,0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid #775fe7;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 100%;
+  padding: 24px;
+  box-shadow: 0 8px 32px rgba(28,22,56,0.4);
+}
+
+/* Título */
+.contact-title {
+  font-family: 'Fira Mono', monospace;
+  color: #e5dbff;
   text-align: center;
-  margin-bottom: 24px;
+  margin-bottom: 16px;
   position: relative;
 }
-#contact h2::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: -8px;
-  transform: translateX(-50%);
+.contact-title::after {
+  content: '';
+  display: block;
   width: 60px;
-  height: 3px;
-  background: linear-gradient(90deg, #775fe7, #37398a);
-  border-radius: 2px;
+  height: 2px;
+  background: #775fe7;
+  margin: 8px auto 0;
 }
 
-/* Cada fila de contacto */
+/* Lista de contactos */
+.contact-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 .contact-item {
   display: flex;
   align-items: center;
-  gap: 12px;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
-/* Icono junto al texto */
-.contact-item i {
+/* Icono */
+.contact-icon {
   font-size: 1.4em;
-  color: #7a3bd1;
-  flex-shrink: 0;
+  color: #775fe7;
+  width: 32px;
+  text-align: center;
+  margin-right: 12px;
 }
 
-/* Enlace de contacto */
-.contact-item a {
+/* Enlace */
+.contact-link {
   display: inline-block;
+  color: #e5dbff;
+  background: rgba(49,34,82,0.5);
   padding: 10px 16px;
-  background: rgba(119, 95, 231, 0.1);
-  color: #e9eaf5;
   border-radius: 8px;
   text-decoration: none;
-  font-family: 'Fira Mono', monospace;
-  font-size: 1em;
   transition: background 0.3s, color 0.3s;
-  width: 100%;
-  max-width: 480px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  width: calc(100% - 44px); /* ajusta al icono + margen */
 }
-
-/* Hover del enlace */
-.contact-item a:hover {
-  background: linear-gradient(135deg, #775fe7, #8c6fff);
+.contact-link:hover {
+  background: #775fe7;
   color: #fff;
 }
 
-/* Contenedor de iconos sociales al final */
-.contact-social {
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-  margin-top: 32px;
-}
-
-/* Iconos sociales */
-.contact-social .social-link {
-  color: #e9eaf5;
-  font-size: 1.6em;
-  transition: color 0.2s, transform 0.2s;
-}
-
-.contact-social .social-link:hover {
-  color: #c7abfe;
-  transform: scale(1.1);
-}
-
-/* Responsividad móvil */
-@media (max-width: 600px) {
-  #contact {
-    padding: 30px 16px;
+/* Adaptación móvil (opcional ajustar breakpoint) */
+@media (max-width: 900px) {
+  .contact-card {
+    padding: 16px;
   }
   .contact-item {
     flex-direction: column;
     align-items: flex-start;
   }
-  .contact-item a {
-    max-width: 100%;
+  .contact-icon {
+    margin-bottom: 8px;
   }
-  .contact-social {
-    gap: 16px;
-    margin-top: 24px;
+  .contact-link {
+    width: 100%;
+    text-align: left;
   }
 }
 
