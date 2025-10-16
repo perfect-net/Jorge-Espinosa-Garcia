@@ -459,6 +459,12 @@ section h2::after {
 }
 
 /* ==== TAGS SOFISTICADOS ==== */
+.writeup-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
 .tag {
     background: linear-gradient(135deg, #312252, #37398a);
     color: #e5dbff;
@@ -469,6 +475,21 @@ section h2::after {
     font-weight: 600;
     box-shadow: 0 4px 12px rgba(49, 34, 82, 0.3);
     border: 1px solid rgba(119, 95, 231, 0.3);
+}
+
+@media (max-width: 900px) {
+  .writeup-tags {
+    gap: 6px;
+  }
+  .tag {
+    min-width: 90px; /* puedes ajustar el valor según tu diseño */
+    margin-right: 0; /* el gap se encarga del espacio entre tags */
+    margin-bottom: 8px;
+    font-size: 0.9em;
+    text-align: center;
+    /* puedes añadir más estilos si quieres que ocupen el 100%, ej: */
+    /* flex: 1 1 100%; */
+  }
 }
 
 /* ==== RESPONSIVE MEJORADO ==== */
