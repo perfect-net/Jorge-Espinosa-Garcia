@@ -724,6 +724,22 @@ section h2::after {
     text-align: left;
   }
 }
+/* Social Links -- Contact*/
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  color: #e5dbff;
+  text-decoration: none;
+  margin-right: 16px;
+  transition: color 0.3s;
+}
 
+.social-link i {
+  margin-right: 8px;
+  font-size: 1.2em;
+}
 
+.social-link:hover {
+  color: #775fe7;
+}
 
