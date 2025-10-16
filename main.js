@@ -53,10 +53,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const typedTextElement = document.querySelector('.typed-text');
     if (typedTextElement) {
         const phrases = [
-            'SOC Analyst & Cybersecurity Specialist',
+            'SOC Analyst',
             'Malware Analysis',
+            'Forensics',
             'Incident Response',
-            'Cybersecurity Content Creator'
+            'Cybersecurity Content'
         ];
         let currentPhrase = 0;
         let currentChar = 0;
