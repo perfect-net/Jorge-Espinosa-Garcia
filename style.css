@@ -46,26 +46,15 @@ header::after {
 }
 
 /* Estilo común para todas las secciones principales */
-section {
-  padding: 80px 20px;      /* espacio interior vertical u horizontal */
-  margin: 0 auto 80px;     /* margen inferior uniforme de 80px */
-  width: 100%;             /* ocupan toda la anchura del contenedor */
+.section-common {
+  padding: 80px 20px;
+  margin-bottom: 80px;
 }
-
-/* Opcional: si usas un contenedor .container dentro de cada sección */
-section .container {
-  max-width: 1200px;       /* igual que en otras secciones */
-  margin: 0 auto;
-}
-
-/* Ajuste para el último section (elimina margen inferior extra) */
-section:last-of-type {
+.section-common:last-of-type {
   margin-bottom: 0;
 }
-
-/* Ajustes móviles: reduce padding/margin en pantallas pequeñas */
 @media (max-width: 480px) {
-  section {
+  .section-common {
     padding: 40px 16px;
     margin-bottom: 40px;
   }
