@@ -63,7 +63,7 @@ header::after {
     position: relative;
 }
 .logo::before {
-    content: "🛡️";
+    content: none !important;
     margin-right: 12px;
     filter: drop-shadow(0 0 8px #775fe7);
 }
