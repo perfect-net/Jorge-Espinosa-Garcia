@@ -610,8 +610,7 @@ section h2::after {
 /* Contenedor general */
 .contact-section {
   padding: 40px 20px;
-  display: flex;
-  justify-content: center;
+  width: 100%;
 }
 
 /* Tarjeta de contacto */
@@ -620,17 +619,17 @@ section h2::after {
   backdrop-filter: blur(12px);
   border: 1px solid #775fe7;
   border-radius: 12px;
-  max-width: 400px;
   width: 100%;
   padding: 24px;
   box-shadow: 0 8px 32px rgba(28,22,56,0.4);
+  margin-bottom: 40px; /* espacio inferior igual que otras secciones */
 }
 
 /* Título */
 .contact-title {
   font-family: 'Fira Mono', monospace;
   color: #e5dbff;
-  text-align: center;
+  align-items: flex-start;
   margin-bottom: 16px;
   position: relative;
 }
