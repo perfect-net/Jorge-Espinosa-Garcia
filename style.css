@@ -138,6 +138,12 @@ header::after {
     animation: rotate 20s linear infinite;
     z-index: -1;
 }
+.typed-text {
+    min-height: 1.5em; /* Reserva espacio incluso cuando está vacío */
+    display: block;
+    margin: 0 auto;
+}
+
 @keyframes rotate {
     to { transform: rotate(360deg); }
 }
